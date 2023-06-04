@@ -8,18 +8,18 @@
   <title>Vite App</title>
 </head>
 
-<body class="text-gray-600">
+<body class="text-gray-600 font-body">
   <div><!--content wrapper-->
     <div>
       <nav>
         <div>
-          <h1>
+          <h1 class="font-bold uppercase p-4 border-b border-gray-100">
             <a href="/">Samurai Food</a>
           </h1>
 
         </div>
         <ul>
-          <li>
+          <li class="text-gray-700 font-bold">
             <a href="#">
               <span>Home</span>
             </a>
@@ -38,40 +38,72 @@
       </nav>
     </div> <!-- end nav -->
 
-    <main>
-      <div>
-        <a href="#">Log in</a>
-        <a href="#">Sign up</a>
+    <main class="px-16 py-6 bg-gray-100">
+      <div class="flex justify-center md:justify-end">
+        <a href="#" class="text-primary">Log in</a>
+        <a href="#" class="text-primary ml-2">Sign up</a>
       </div>
+
       <header>
-        <h2>Recipes</h2>
-        <h2>For Samurai</h2>
+        <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+        <h2 class="text-2xl font-semibold">For Samurai</h2>
       </header>
       <div>
 
-        <h4>Latest Recipes</h4>
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
 
-        <div>
+        <div class="mt-8">
 
           <!-- cards go here -->
 
-          <div>
-            <img src="./img//su1.jpeg" alt="sushi">
-            <div>
-              <span>
+          <div class="card">
+            <img src="./img//su1.jpeg" alt="sushi" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">
                 5 Bean Chilli Stew
               </span>
-              <span>Recipe by Mario</span>
+              <span class="block text-text-gray-500 text-sm
+              ">Recipe by Mario</span>
+            </div>
+            <div class="badge">
+              <span>25 mins</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img//su2.jpeg" alt="sushi" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">
+                Maki (Makizushi)
+              </span>
+              <span class="block text-text-gray-500 text-sm
+                        ">Recipe by Makizushi</span>
+            </div>
+            <div class="badge">
+              <span>25 mins</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img//su3.jpeg" alt="sushi" class="w-full h-32 sm:h-48 object-cover">
+            <div class="m-4">
+              <span class="font-bold">
+                Chirashi (Chirashizushi)
+              </span>
+              <span class="block text-text-gray-500 text-sm
+                        ">Recipe by Chirashizushi</span>
+            </div>
+            <div class="badge">
+              <span>25 mins</span>
             </div>
           </div>
         </div>
 
-        <h4>Most Popular</h4>
-        <div>
+        <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Popular</h4>
+        <div class="mt-8
+        ">
           <!-- cards go here -->
         </div>
-        <div>
-          <div>
+        <div class="flex justify-center">
+          <div class="bg-secondary-100 text-secondary-200">
             Load more
           </div>
         </div>
